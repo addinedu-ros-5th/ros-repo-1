@@ -26,7 +26,7 @@ class WindowClass(QMainWindow, from_class) :
         self.ipEdit.setValidator(QRegExpValidator(ipRegex, self))
         self.portEdit.setValidator(QIntValidator())
 
-        self.setWindowTitle("TCP Client")
+        self.setWindowTitle("Shelf Indicator")
 
         self.ConnectBtn.clicked.connect(self.connect)
 
