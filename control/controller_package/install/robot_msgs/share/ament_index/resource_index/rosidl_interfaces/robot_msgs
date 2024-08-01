@@ -1,0 +1,4 @@
+msg/GoalPose.idl
+msg/GoalPose.msg
+msg/ObjectPose.idl
+msg/ObjectPose.msg
