@@ -127,13 +127,12 @@ def main(args=None):
     spin_thread = Thread(target=spin)
     spin_thread.start()
 
-
+    def shutdown_ros():
+        goal_publisher.destroy_node()
+        rp.shutdown()
+    
+    app.aboutToQuit.connect(shutdown_ros)
     sys.exit(app.exec_())
-
-    goal_publisher.destroy_node()
-    rp.shutdown()
-
-
 
 if __name__ == "__main__":
     main()
