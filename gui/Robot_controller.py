@@ -4,6 +4,7 @@ from PyQt5.QtGui import *
 from PyQt5 import uic
 from PyQt5.QtCore import *
 from struct import *
+import socket
 import datetime
 
 import rclpy as rp
@@ -11,6 +12,9 @@ from rclpy.node import Node
 from robot_msgs.msg import GoalPose
 from threading import Thread
 
+shelf_IPs = {
+    "shelf1":'192.168.1.104',
+}
 
 positions = {
     "o": (0., 0., 0.),
@@ -53,7 +57,7 @@ class GoalLauncher(Node):
         self.goal_publisher.publish(msg)
         print(msg)
 
-from_class = uic.loadUiType("/home/hj/ros-repo-1/gui/Robot_controller.ui")[0]
+from_class = uic.loadUiType("/home/aa/dev_ws/ros-repo-1/gui/Robot_controller.ui")[0]
 
 class WindowClass(QMainWindow, from_class) :
     def __init__(self, goal_publisher):
@@ -68,12 +72,46 @@ class WindowClass(QMainWindow, from_class) :
         self.Shelf5.clicked.connect(lambda: self.set_goal("Shelf5"))
         self.Shelf6.clicked.connect(lambda: self.set_goal("Shelf6"))
 
+        self.timer = QTimer(self)
+        self.timer.start(1000)
+        self.timer.timeout.connect(self.timeout)
+
+        self.format = Struct('@iii')
+
+        self.shelf1_IR_sensor_value = None
+        self.shelf1_connected = False
+        self.shelf1_connect()
+
+    def shelf1_connect(self):
+        self.shelf1_socket = socket.socket()
+        self.shelf1_socket.connect((shelf_IPs["shelf1"], 80))
+        self.shelf1_id.setText('1')
+        self.shelf1_connected = True
+    
+    def timeout(self):
+        self.updateData1(1, 34, 0)
+    
+    def updateData1(self, machine_id, pin, status):
+        if self.shelf1_connected == True:
+            data = self.format.pack(machine_id, pin, status)
+            req = self.shelf1_socket.send(data)
+            rev = self.format.unpack(self.shelf1_socket.recv(self.format.size))
+            self.machine_id = rev[0]
+            if rev[1] == 34:
+                self.shelf1_IR_sensor_value = rev[2]
+                if self.shelf1_IR_sensor_value < 3900:
+                    self.shelf1_status.setText('loaded')
+                else:
+                     self.shelf1_status.setText('unloaded')            
+            print(rev)
+        
+
     def set_goal(self, key):
         self.goal_publisher.publish_goal(key)
         
     def __del__(self):
-        self.sock.close()
-        self.connected = False
+        self.shelf1_socket.close()
+        self.shelf1_connected = False
 
 def main(args=None):
     rp.init(args=args)

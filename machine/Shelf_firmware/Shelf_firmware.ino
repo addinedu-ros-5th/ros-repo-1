@@ -55,12 +55,13 @@ void loop()
       //int i = 0;
       while (client.available() > 0)
       {
-        client.readBytes(data, 8);
+        client.readBytes(data, 12);
         memcpy(&p, &data, sizeof(p));
 
         if (p.pin == TCRT5000_SENSOR_PIN)
         {
           value = analogRead(TCRT5000_SENSOR_PIN);
+          p.id = machine_id;
           p.status = value;
 
           memcpy(&data, &p, sizeof(p));
