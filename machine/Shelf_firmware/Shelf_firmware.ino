@@ -1,7 +1,9 @@
 #include <WiFi.h>
 
-const char* ssid = "addinedu_class_2 (2.4G)";
-const char* password = "addinedu1";
+const char* ssid = "Team1";
+const char* password = "1q2w3e4r";
+
+const int machine_id = 1;
 
 WiFiServer server(80);
 
@@ -34,6 +36,7 @@ void setup()
 
 struct protocol
 {
+  int id = machine_id;
   int pin = TCRT5000_SENSOR_PIN;
   int status = 0;
 };
@@ -48,7 +51,7 @@ void loop()
     struct protocol p;
     while (client.connected())
     {
-      char data[8];
+      char data[12];
       //int i = 0;
       while (client.available() > 0)
       {
@@ -62,11 +65,12 @@ void loop()
 
           memcpy(&data, &p, sizeof(p));
         }
+        Serial.println(p.id);
         Serial.println(p.pin);
         Serial.println(p.status);
         Serial.println(value);
 
-        client.write(data, 8);
+        client.write(data, 12);
       }
 
       delay (10);
