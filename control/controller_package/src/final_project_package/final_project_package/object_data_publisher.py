@@ -26,7 +26,7 @@ class ObjectDetector(Node):
 
         self.detector_id = 1
         
-        self.model = YOLO('/home/aa/dev_ws/final_project/final_project_package/src/final_project_package/model/detector.pt')
+        self.model = YOLO('/home/hj/ros-repo-1/control/controller_package/src/final_project_package/model/detector.pt')
         self.conf = 0.3
 
         self.image_center_x = 160

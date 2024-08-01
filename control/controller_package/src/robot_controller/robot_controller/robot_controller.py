@@ -72,10 +72,10 @@ class MoveToGoalNode(Node):
 
     def object_detection(self, object_info):
         self.is_object = object_info.detected
-        # self.object_labels = object_info.labels
-        # self.object_ranges = object_info.ranges
-        # self.object_angles = object_info.angles
-        print(self.is_object)
+        self.object_labels = object_info.labels
+        self.object_ranges = object_info.ranges
+        self.object_angles = object_info.angles
+        # print(self.is_object, self.object_labels, self.object_ranges, self.object_angles)
     
     def set_goal(self, msg):
         self.move_flag = msg.move_flag
@@ -112,6 +112,14 @@ class MoveToGoalNode(Node):
                 self.initial_rotate_flag = False
 
         elif self.move_flag is True:
+            if self.is_object is True:
+                if min(self.object_ranges) < 0.8:
+                    print('prevent obstacle')
+                    twist = Twist()
+                    twist.linear.x = 0.0
+                    twist.angular.z = 0.0
+                    self.cmd_vel_publisher.publish(twist)
+                    return 0
             # 목표 위치와 현재 위치 간의 거리 및 각도 계산
             dx = self.goal_x - self.position['x']
             dy = self.goal_y - self.position['y']
