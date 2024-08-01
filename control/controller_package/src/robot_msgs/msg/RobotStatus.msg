@@ -1,2 +1,2 @@
-int8 robot_id
-int8 status
+string robot_id
+string status
