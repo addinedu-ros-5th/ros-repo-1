@@ -3,11 +3,13 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5 import uic
 from PyQt5.QtCore import *
+from PyQt5.QtCore import Qt, QTimer
 from struct import *
 import datetime
 
 import rclpy as rp
 from rclpy.node import Node
+from geometry_msgs.msg import PoseWithCovarianceStamped
 from robot_msgs.msg import GoalPose
 from threading import Thread
 
@@ -37,11 +39,47 @@ positions = {
 }
 
 
+class GoalLauncher(rp.node.Node):
+    def __init__(self):
+        super().__init__('goal_launcher')
+        self.subscription = self.create_subscription(
+            PoseWithCovarianceStamped,
+            'amcl_pose',
+            self.listener_callback,
+            10)
+        self.subscription
+        self.current_pose = None
+
+    def listener_callback(self, msg):
+        self.current_pose = msg.pose.pose
+        self.get_logger().info(f'Received pose: {self.current_pose}')
+        if self.gui:
+            self.gui.set_pose(self.current_pose)
+
+    def set_gui(self, gui):
+        self.gui = gui
+
 class GoalLauncher(Node):
     def __init__(self):
         super().__init__('gui_goal_publiser')
         self.goal_publisher = self.create_publisher(GoalPose, '/set_goal', 10)
-    
+        self.subscription = self.create_subscription(
+            PoseWithCovarianceStamped,
+            '/amcl_pose',
+            self.listener_callback,
+            10)
+        self.subscription
+        self.current_pose = None
+
+    def listener_callback(self, msg):
+        self.current_pose = msg.pose.pose
+        self.get_logger().info(f'Received pose: {self.current_pose}')
+        if self.gui:
+            self.gui.set_pose(self.current_pose)
+
+    def set_gui(self, gui):
+        self.gui = gui
+        
     def publish_goal(self, key):
         msg = GoalPose()
         msg.move_flag = True
@@ -53,7 +91,7 @@ class GoalLauncher(Node):
         self.goal_publisher.publish(msg)
         print(msg)
 
-from_class = uic.loadUiType("/home/hj/ros-repo-1/gui/Robot_controller.ui")[0]
+from_class = uic.loadUiType("./gui/Robot_controller.ui")[0]
 
 class WindowClass(QMainWindow, from_class) :
     def __init__(self, goal_publisher):
@@ -67,10 +105,44 @@ class WindowClass(QMainWindow, from_class) :
         self.Shelf4.clicked.connect(lambda: self.set_goal("Shelf4"))
         self.Shelf5.clicked.connect(lambda: self.set_goal("Shelf5"))
         self.Shelf6.clicked.connect(lambda: self.set_goal("Shelf6"))
+        
+        image_path = './map/test_map.png'
+
+        # QPixmap 객체 생성 및 QLabel에 설정
+        self.pixmap = QPixmap(image_path)
+
+        self.scaled_pixmap = self.pixmap.scaled(self.label.size(), aspectRatioMode=True)
+        self.label.setPixmap(self.scaled_pixmap)
+
+        self.timer = QTimer()
+        self.timer.timeout.connect(self.update_position)
+        self.timer.start(100)
+
+    def update_position(self):
+        if self.current_pose:
+            self.draw_position()
+
+    def set_pose(self, pose):
+        self.current_pose = pose
+        self.update_position()
+
+    def draw_position(self):
+        x = 530 - self.current_pose.position.x * 300   # Example scale and offset
+        y = 110 - self.current_pose.position.y * 200  # Example scale and offset
+        print(x, y)
+        updated_pixmap = self.scaled_pixmap.copy()
+        painter = QPainter(updated_pixmap)
+        pen = QPen(Qt.red)
+        pen.setWidth(8)
+        painter.setPen(pen)
+        painter.drawPoint(int(x), int(y))
+        painter.end()
+
+        self.label.setPixmap(updated_pixmap)
 
     def set_goal(self, key):
         self.goal_publisher.publish_goal(key)
-        
+
     def __del__(self):
         self.sock.close()
         self.connected = False
@@ -83,6 +155,8 @@ def main(args=None):
     myWindows = WindowClass(goal_publisher)
     myWindows.show()
 
+    goal_publisher.set_gui(myWindows)
+
     def spin():
         rp.spin(goal_publisher)
 
@@ -90,16 +164,13 @@ def main(args=None):
     spin_thread.start()
 
 
+    def shutdown_ros():
+        goal_publisher.destroy_node()
+        rp.shutdown()
+
+    app.aboutToQuit.connect(shutdown_ros)
     sys.exit(app.exec_())
-
-    goal_publisher.destroy_node()
-    rp.shutdown()
-
 
 
 if __name__ == "__main__":
     main()
-    
-    
-    
-    
