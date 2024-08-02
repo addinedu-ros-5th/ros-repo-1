@@ -95,11 +95,7 @@ class GoalLauncher(Node):
         self.goal_publisher.publish(msg)
         print(msg)
 
-<<<<<<< HEAD
 from_class = uic.loadUiType("./gui/Robot_controller.ui")[0]
-=======
-from_class = uic.loadUiType("/home/aa/dev_ws/ros-repo-1/gui/Robot_controller.ui")[0]
->>>>>>> e52349fc58786e6de92d680b19e1878dd84454ef
 
 class WindowClass(QMainWindow, from_class) :
     def __init__(self, goal_publisher):
@@ -205,17 +201,6 @@ def main(args=None):
     spin_thread = Thread(target=spin)
     spin_thread.start()
 
-<<<<<<< HEAD
-
-    def shutdown_ros():
-        goal_publisher.destroy_node()
-        rp.shutdown()
-
-    app.aboutToQuit.connect(shutdown_ros)
-    sys.exit(app.exec_())
-
-
-=======
     def shutdown_ros():
         goal_publisher.destroy_node()
         rp.shutdown()
@@ -223,6 +208,5 @@ def main(args=None):
     app.aboutToQuit.connect(shutdown_ros)
     sys.exit(app.exec_())
 
->>>>>>> e52349fc58786e6de92d680b19e1878dd84454ef
 if __name__ == "__main__":
     main()
