@@ -5,6 +5,7 @@ from geometry_msgs.msg import PoseWithCovarianceStamped
 from geometry_msgs.msg import PoseStamped
 from robot_msgs.msg import GoalPose
 from robot_msgs.msg import ObjectPose
+from robot_msgs.msg import RobotStatus
 from math import sqrt, atan2, pi
 
 class PID:
@@ -51,6 +52,10 @@ class MoveToGoalNode(Node):
         self.amcl_subscriber = self.create_subscription(PoseWithCovarianceStamped, '/amcl_pose', self.amcl_pose_callback, 10)
         self.goal_subscriber = self.create_subscription(GoalPose, '/set_goal', self.set_goal, 10)
         self.object_subscriber = self.create_subscription(ObjectPose, '/detected_object', self.object_detection, 10)
+        self.current_status_publisher = self.create_publisher(RobotStatus, '/robot_status',10)
+
+        self.robot_id = 'Mk.2'
+        self.status = 'wait'
 
         self.goal_x = 0.0  # 목표 위치의 x 좌표
         self.goal_y = 0.0  # 목표 위치의 y 좌표
@@ -69,13 +74,19 @@ class MoveToGoalNode(Node):
         self.object_angles = []
 
         self.timer = self.create_timer(0.1, self.timer_callback)  # 0.1초마다 호출
+    
+    def publish_status(self):
+        status_msg = RobotStatus()
+        status_msg.robot_id = self.robot_id
+        status_msg.status = self.status
+        self.current_status_publisher.publish(status_msg)
 
     def object_detection(self, object_info):
         self.is_object = object_info.detected
-        # self.object_labels = object_info.labels
-        # self.object_ranges = object_info.ranges
-        # self.object_angles = object_info.angles
-        print(self.is_object)
+        self.object_labels = object_info.labels
+        self.object_ranges = object_info.ranges
+        self.object_angles = object_info.angles
+        # print(self.is_object, self.object_labels, self.object_ranges, self.object_angles)
     
     def set_goal(self, msg):
         self.move_flag = msg.move_flag
@@ -92,7 +103,11 @@ class MoveToGoalNode(Node):
         print(self.position['x'], self.position['y'], self.position['theta'])
 
     def timer_callback(self):
+        self.status = 'wait'
+
         if self.initial_rotate_flag is True:
+            self.status = 'move'
+
             # 목표 위치와 현재 위치 간의 거리 및 각도 계산
             dx = self.goal_x - self.position['x']
             dy = self.goal_y - self.position['y']
@@ -112,6 +127,15 @@ class MoveToGoalNode(Node):
                 self.initial_rotate_flag = False
 
         elif self.move_flag is True:
+            if self.is_object is True:
+                if min(self.object_ranges) < 0.8:
+                    print('prevent obstacle')
+                    self.status = 'pause'
+                    twist = Twist()
+                    twist.linear.x = 0.0
+                    twist.angular.z = 0.0
+                    self.cmd_vel_publisher.publish(twist)
+                    return 0
             # 목표 위치와 현재 위치 간의 거리 및 각도 계산
             dx = self.goal_x - self.position['x']
             dy = self.goal_y - self.position['y']
@@ -149,6 +173,8 @@ class MoveToGoalNode(Node):
                     twist.angular.z = 0.0
                     self.cmd_vel_publisher.publish(twist)
                     self.rotate_flag = False
+        
+        self.publish_status()
 
     def normalize_angle(self, angle):
         while angle > pi:

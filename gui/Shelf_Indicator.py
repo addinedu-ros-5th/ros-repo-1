@@ -34,7 +34,7 @@ class WindowClass(QMainWindow, from_class) :
         self.timer.start(1000)
         self.timer.timeout.connect(self.timeout)
 
-        self.format = Struct('@ii')
+        self.format = Struct('@iii')
 
         self.IR_sensor_value = 0
     
@@ -59,15 +59,16 @@ class WindowClass(QMainWindow, from_class) :
             self.connected = False
 
     def timeout(self):
-        self.updateData(34, 0)
+        self.updateData(1, 34, 0)
     
-    def updateData(self, pin, status):
+    def updateData(self, machine_id, pin, status):
         if self.connected == True:
-            data = self.format.pack(pin, status)
+            data = self.format.pack(machine_id, pin, status)
             req = self.sock.send(data)
             rev = self.format.unpack(self.sock.recv(self.format.size))
-            if rev[0] == 34:
-                self.IR_sensor_value = rev[1]
+            self.machine_id = rev[0]
+            if rev[1] == 34:
+                self.IR_sensor_value = rev[2]
                 self.IR_sensor.setText(str(self.IR_sensor_value))
                 if self.IR_sensor_value < 3900:
                     self.shelf_state.setText('loaded')
