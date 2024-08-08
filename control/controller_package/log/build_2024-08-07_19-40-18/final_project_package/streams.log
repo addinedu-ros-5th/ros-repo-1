@@ -1,0 +1,21 @@
+[1.138s] Invoking command in '/home/aa/dev_ws/AIE_Final-main/control/controller_package/src/final_project_package': PYTHONPATH=/home/aa/dev_ws/AIE_Final-main/control/controller_package/build/final_project_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aa/dev_ws/AIE_Final-main/control/controller_package/install/final_project_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/final_project_package build --build-base /home/aa/dev_ws/AIE_Final-main/control/controller_package/build/final_project_package/build install --record /home/aa/dev_ws/AIE_Final-main/control/controller_package/build/final_project_package/install.log --single-version-externally-managed install_data
+[1.363s] running egg_info
+[1.364s] writing ../../build/final_project_package/final_project_package.egg-info/PKG-INFO
+[1.364s] writing dependency_links to ../../build/final_project_package/final_project_package.egg-info/dependency_links.txt
+[1.365s] writing entry points to ../../build/final_project_package/final_project_package.egg-info/entry_points.txt
+[1.365s] writing requirements to ../../build/final_project_package/final_project_package.egg-info/requires.txt
+[1.365s] writing top-level names to ../../build/final_project_package/final_project_package.egg-info/top_level.txt
+[1.367s] reading manifest file '../../build/final_project_package/final_project_package.egg-info/SOURCES.txt'
+[1.367s] writing manifest file '../../build/final_project_package/final_project_package.egg-info/SOURCES.txt'
+[1.368s] running build
+[1.368s] running build_py
+[1.368s] running install
+[1.368s] running install_lib
+[1.369s] running install_data
+[1.369s] running install_egg_info
+[1.371s] removing '/home/aa/dev_ws/AIE_Final-main/control/controller_package/install/final_project_package/lib/python3.10/site-packages/final_project_package-0.0.0-py3.10.egg-info' (and everything under it)
+[1.371s] Copying ../../build/final_project_package/final_project_package.egg-info to /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/final_project_package/lib/python3.10/site-packages/final_project_package-0.0.0-py3.10.egg-info
+[1.372s] running install_scripts
+[1.388s] Installing object_data_publisher script to /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/final_project_package/lib/final_project_package
+[1.388s] writing list of installed files to '/home/aa/dev_ws/AIE_Final-main/control/controller_package/build/final_project_package/install.log'
+[1.420s] Invoked command in '/home/aa/dev_ws/AIE_Final-main/control/controller_package/src/final_project_package' returned '0': PYTHONPATH=/home/aa/dev_ws/AIE_Final-main/control/controller_package/build/final_project_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aa/dev_ws/AIE_Final-main/control/controller_package/install/final_project_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/final_project_package build --build-base /home/aa/dev_ws/AIE_Final-main/control/controller_package/build/final_project_package/build install --record /home/aa/dev_ws/AIE_Final-main/control/controller_package/build/final_project_package/install.log --single-version-externally-managed install_data

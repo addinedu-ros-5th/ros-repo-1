@@ -1,0 +1,26 @@
+[1.656s] Invoking command in '/home/aa/dev_ws/AIE_Final-main/control/controller_package/src/robot_controller': PYTHONPATH=/home/aa/dev_ws/AIE_Final-main/control/controller_package/build/robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_controller build --build-base /home/aa/dev_ws/AIE_Final-main/control/controller_package/build/robot_controller/build install --record /home/aa/dev_ws/AIE_Final-main/control/controller_package/build/robot_controller/install.log --single-version-externally-managed install_data
+[2.058s] running egg_info
+[2.059s] writing ../../build/robot_controller/robot_controller.egg-info/PKG-INFO
+[2.059s] writing dependency_links to ../../build/robot_controller/robot_controller.egg-info/dependency_links.txt
+[2.059s] writing entry points to ../../build/robot_controller/robot_controller.egg-info/entry_points.txt
+[2.059s] writing requirements to ../../build/robot_controller/robot_controller.egg-info/requires.txt
+[2.060s] writing top-level names to ../../build/robot_controller/robot_controller.egg-info/top_level.txt
+[2.061s] reading manifest file '../../build/robot_controller/robot_controller.egg-info/SOURCES.txt'
+[2.062s] writing manifest file '../../build/robot_controller/robot_controller.egg-info/SOURCES.txt'
+[2.062s] running build
+[2.062s] running build_py
+[2.062s] copying robot_controller/robot1_controller_action.py -> /home/aa/dev_ws/AIE_Final-main/control/controller_package/build/robot_controller/build/lib/robot_controller
+[2.062s] running install
+[2.063s] running install_lib
+[2.063s] copying /home/aa/dev_ws/AIE_Final-main/control/controller_package/build/robot_controller/build/lib/robot_controller/robot1_controller_action.py -> /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_controller/lib/python3.10/site-packages/robot_controller
+[2.064s] byte-compiling /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_controller/lib/python3.10/site-packages/robot_controller/robot1_controller_action.py to robot1_controller_action.cpython-310.pyc
+[2.065s] running install_data
+[2.066s] running install_egg_info
+[2.067s] removing '/home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_controller/lib/python3.10/site-packages/robot_controller-0.0.0-py3.10.egg-info' (and everything under it)
+[2.067s] Copying ../../build/robot_controller/robot_controller.egg-info to /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_controller/lib/python3.10/site-packages/robot_controller-0.0.0-py3.10.egg-info
+[2.068s] running install_scripts
+[2.087s] Installing action_robot1_controller script to /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_controller/lib/robot_controller
+[2.087s] Installing action_robot2_controller script to /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_controller/lib/robot_controller
+[2.087s] Installing robot_controller script to /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_controller/lib/robot_controller
+[2.088s] writing list of installed files to '/home/aa/dev_ws/AIE_Final-main/control/controller_package/build/robot_controller/install.log'
+[2.127s] Invoked command in '/home/aa/dev_ws/AIE_Final-main/control/controller_package/src/robot_controller' returned '0': PYTHONPATH=/home/aa/dev_ws/AIE_Final-main/control/controller_package/build/robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_controller build --build-base /home/aa/dev_ws/AIE_Final-main/control/controller_package/build/robot_controller/build install --record /home/aa/dev_ws/AIE_Final-main/control/controller_package/build/robot_controller/install.log --single-version-externally-managed install_data

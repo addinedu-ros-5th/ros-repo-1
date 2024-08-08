@@ -1,0 +1,5 @@
+[console_scripts]
+action_robot1_controller = robot_controller.robot1_controller_action:main
+action_robot2_controller = robot_controller.robot2_controller_action:main
+robot_controller = robot_controller.robot_controller:main
+

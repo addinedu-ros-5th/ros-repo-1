@@ -1,0 +1,24 @@
+[1.120s] Invoking command in '/home/aa/dev_ws/AIE_Final-main/control/controller_package/src/final_project_package': PYTHONPATH=/home/aa/dev_ws/AIE_Final-main/control/controller_package/build/final_project_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aa/dev_ws/AIE_Final-main/control/controller_package/install/final_project_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/final_project_package build --build-base /home/aa/dev_ws/AIE_Final-main/control/controller_package/build/final_project_package/build install --record /home/aa/dev_ws/AIE_Final-main/control/controller_package/build/final_project_package/install.log --single-version-externally-managed install_data
+[1.349s] running egg_info
+[1.350s] writing ../../build/final_project_package/final_project_package.egg-info/PKG-INFO
+[1.350s] writing dependency_links to ../../build/final_project_package/final_project_package.egg-info/dependency_links.txt
+[1.350s] writing entry points to ../../build/final_project_package/final_project_package.egg-info/entry_points.txt
+[1.350s] writing requirements to ../../build/final_project_package/final_project_package.egg-info/requires.txt
+[1.350s] writing top-level names to ../../build/final_project_package/final_project_package.egg-info/top_level.txt
+[1.352s] reading manifest file '../../build/final_project_package/final_project_package.egg-info/SOURCES.txt'
+[1.353s] writing manifest file '../../build/final_project_package/final_project_package.egg-info/SOURCES.txt'
+[1.353s] running build
+[1.353s] running build_py
+[1.353s] copying final_project_package/object_data_publisher.py -> /home/aa/dev_ws/AIE_Final-main/control/controller_package/build/final_project_package/build/lib/final_project_package
+[1.353s] running install
+[1.354s] running install_lib
+[1.354s] copying /home/aa/dev_ws/AIE_Final-main/control/controller_package/build/final_project_package/build/lib/final_project_package/object_data_publisher.py -> /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/final_project_package/lib/python3.10/site-packages/final_project_package
+[1.355s] byte-compiling /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/final_project_package/lib/python3.10/site-packages/final_project_package/object_data_publisher.py to object_data_publisher.cpython-310.pyc
+[1.357s] running install_data
+[1.357s] running install_egg_info
+[1.358s] removing '/home/aa/dev_ws/AIE_Final-main/control/controller_package/install/final_project_package/lib/python3.10/site-packages/final_project_package-0.0.0-py3.10.egg-info' (and everything under it)
+[1.359s] Copying ../../build/final_project_package/final_project_package.egg-info to /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/final_project_package/lib/python3.10/site-packages/final_project_package-0.0.0-py3.10.egg-info
+[1.359s] running install_scripts
+[1.380s] Installing object_data_publisher script to /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/final_project_package/lib/final_project_package
+[1.380s] writing list of installed files to '/home/aa/dev_ws/AIE_Final-main/control/controller_package/build/final_project_package/install.log'
+[1.415s] Invoked command in '/home/aa/dev_ws/AIE_Final-main/control/controller_package/src/final_project_package' returned '0': PYTHONPATH=/home/aa/dev_ws/AIE_Final-main/control/controller_package/build/final_project_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aa/dev_ws/AIE_Final-main/control/controller_package/install/final_project_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/final_project_package build --build-base /home/aa/dev_ws/AIE_Final-main/control/controller_package/build/final_project_package/build install --record /home/aa/dev_ws/AIE_Final-main/control/controller_package/build/final_project_package/install.log --single-version-externally-managed install_data

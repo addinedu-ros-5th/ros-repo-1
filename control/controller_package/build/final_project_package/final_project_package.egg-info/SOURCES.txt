@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/final_project_package/final_project_package.egg-info/PKG-INFO
+../../build/final_project_package/final_project_package.egg-info/SOURCES.txt
+../../build/final_project_package/final_project_package.egg-info/dependency_links.txt
+../../build/final_project_package/final_project_package.egg-info/entry_points.txt
+../../build/final_project_package/final_project_package.egg-info/requires.txt
+../../build/final_project_package/final_project_package.egg-info/top_level.txt
+../../build/final_project_package/final_project_package.egg-info/zip-safe
+final_project_package/__init__.py
+final_project_package/object_data_publisher.py
+resource/final_project_package
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

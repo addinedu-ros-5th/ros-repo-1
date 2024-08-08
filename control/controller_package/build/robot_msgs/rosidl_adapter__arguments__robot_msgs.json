@@ -1,0 +1,10 @@
+{
+  "package_name": "robot_msgs",
+  "non_idl_tuples": [
+    "/home/aa/dev_ws/AIE_Final-main/control/controller_package/src/robot_msgs:msg/ObjectPose.msg",
+    "/home/aa/dev_ws/AIE_Final-main/control/controller_package/src/robot_msgs:msg/GoalPose.msg",
+    "/home/aa/dev_ws/AIE_Final-main/control/controller_package/src/robot_msgs:msg/TempPose.msg",
+    "/home/aa/dev_ws/AIE_Final-main/control/controller_package/src/robot_msgs:msg/RobotStatus.msg",
+    "/home/aa/dev_ws/AIE_Final-main/control/controller_package/src/robot_msgs:action/MoveToGoal.action"
+  ]
+}

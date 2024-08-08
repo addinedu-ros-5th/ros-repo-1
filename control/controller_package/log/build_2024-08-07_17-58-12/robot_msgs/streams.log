@@ -1,0 +1,234 @@
+[0.518s] Invoking command in '/home/aa/dev_ws/AIE_Final-main/control/controller_package/build/robot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/aa/dev_ws/AIE_Final-main/control/controller_package/install/task_manager:/home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_controller:/home/aa/dev_ws/AIE_Final-main/control/controller_package/install/final_project_package /usr/bin/cmake --build /home/aa/dev_ws/AIE_Final-main/control/controller_package/build/robot_msgs -- -j12 -l12
+[0.567s] [  1%] Built target robot_msgs__cpp
+[0.567s] [ 12%] Built target robot_msgs__rosidl_generator_c
+[0.578s] [ 12%] Built target ament_cmake_python_copy_robot_msgs
+[0.588s] [ 23%] Built target robot_msgs__rosidl_typesupport_introspection_cpp
+[0.590s] [ 34%] Built target robot_msgs__rosidl_typesupport_cpp
+[0.592s] [ 46%] Built target robot_msgs__rosidl_typesupport_fastrtps_cpp
+[0.599s] [ 68%] Built target robot_msgs__rosidl_typesupport_introspection_c
+[0.599s] [ 68%] Built target robot_msgs__rosidl_typesupport_fastrtps_c
+[0.600s] [ 79%] Built target robot_msgs__rosidl_typesupport_c
+[0.616s] [ 79%] Built target robot_msgs
+[0.632s] [ 80%] Built target robot_msgs__py
+[0.658s] [ 90%] Built target robot_msgs__rosidl_generator_py
+[0.681s] [ 98%] Built target robot_msgs__rosidl_typesupport_introspection_c__pyext
+[0.681s] [ 98%] Built target robot_msgs__rosidl_typesupport_c__pyext
+[0.681s] [100%] Built target robot_msgs__rosidl_typesupport_fastrtps_c__pyext
+[1.047s] running egg_info
+[1.051s] writing robot_msgs.egg-info/PKG-INFO
+[1.052s] writing dependency_links to robot_msgs.egg-info/dependency_links.txt
+[1.052s] writing top-level names to robot_msgs.egg-info/top_level.txt
+[1.067s] reading manifest file 'robot_msgs.egg-info/SOURCES.txt'
+[1.070s] writing manifest file 'robot_msgs.egg-info/SOURCES.txt'
+[1.225s] [100%] Built target ament_cmake_python_build_robot_msgs_egg
+[1.252s] Invoked command in '/home/aa/dev_ws/AIE_Final-main/control/controller_package/build/robot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/aa/dev_ws/AIE_Final-main/control/controller_package/install/task_manager:/home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_controller:/home/aa/dev_ws/AIE_Final-main/control/controller_package/install/final_project_package /usr/bin/cmake --build /home/aa/dev_ws/AIE_Final-main/control/controller_package/build/robot_msgs -- -j12 -l12
+[1.532s] Invoking command in '/home/aa/dev_ws/AIE_Final-main/control/controller_package/build/robot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/aa/dev_ws/AIE_Final-main/control/controller_package/install/task_manager:/home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_controller:/home/aa/dev_ws/AIE_Final-main/control/controller_package/install/final_project_package /usr/bin/cmake --install /home/aa/dev_ws/AIE_Final-main/control/controller_package/build/robot_msgs
+[1.563s] -- Install configuration: ""
+[1.563s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/ament_index/resource_index/rosidl_interfaces/robot_msgs
+[1.563s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs
+[1.563s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/action
+[1.564s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail
+[1.564s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/move_to_goal__functions.c
+[1.564s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/move_to_goal__type_support.h
+[1.564s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/move_to_goal__functions.h
+[1.564s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/move_to_goal__struct.h
+[1.564s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/action/move_to_goal.h
+[1.564s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg
+[1.564s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/robot_status.h
+[1.564s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/rosidl_generator_c__visibility_control.h
+[1.565s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/goal_pose.h
+[1.565s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/object_pose.h
+[1.565s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/temp_pose.h
+[1.565s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail
+[1.565s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/object_pose__type_support.h
+[1.565s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/goal_pose__functions.h
+[1.565s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/goal_pose__struct.h
+[1.566s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/temp_pose__functions.c
+[1.566s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/goal_pose__type_support.h
+[1.566s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/robot_status__functions.h
+[1.566s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/temp_pose__type_support.h
+[1.566s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/robot_status__type_support.h
+[1.566s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/object_pose__struct.h
+[1.566s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/temp_pose__functions.h
+[1.567s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/robot_status__functions.c
+[1.567s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/robot_status__struct.h
+[1.567s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/object_pose__functions.h
+[1.567s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/object_pose__functions.c
+[1.567s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/goal_pose__functions.c
+[1.567s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/temp_pose__struct.h
+[1.567s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/environment/library_path.sh
+[1.567s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/environment/library_path.dsv
+[1.567s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/lib/librobot_msgs__rosidl_generator_c.so
+[1.568s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs
+[1.568s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/action
+[1.568s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail
+[1.568s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/move_to_goal__rosidl_typesupport_fastrtps_c.h
+[1.568s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg
+[1.568s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.568s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail
+[1.568s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/temp_pose__rosidl_typesupport_fastrtps_c.h
+[1.568s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/robot_status__rosidl_typesupport_fastrtps_c.h
+[1.568s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/goal_pose__rosidl_typesupport_fastrtps_c.h
+[1.568s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/object_pose__rosidl_typesupport_fastrtps_c.h
+[1.568s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_fastrtps_c.so
+[1.569s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs
+[1.569s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/action
+[1.569s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail
+[1.569s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/move_to_goal__type_support.c
+[1.569s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/move_to_goal__rosidl_typesupport_introspection_c.h
+[1.569s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg
+[1.569s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.570s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail
+[1.570s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/temp_pose__rosidl_typesupport_introspection_c.h
+[1.570s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/object_pose__type_support.c
+[1.570s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/robot_status__type_support.c
+[1.570s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/object_pose__rosidl_typesupport_introspection_c.h
+[1.570s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/goal_pose__rosidl_typesupport_introspection_c.h
+[1.570s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/robot_status__rosidl_typesupport_introspection_c.h
+[1.570s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/goal_pose__type_support.c
+[1.570s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/temp_pose__type_support.c
+[1.571s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_introspection_c.so
+[1.571s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_c.so
+[1.571s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs
+[1.571s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/action
+[1.572s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/action/move_to_goal.hpp
+[1.572s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail
+[1.572s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/move_to_goal__traits.hpp
+[1.572s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/move_to_goal__builder.hpp
+[1.572s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/move_to_goal__struct.hpp
+[1.572s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg
+[1.572s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/object_pose.hpp
+[1.572s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/temp_pose.hpp
+[1.573s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/robot_status.hpp
+[1.573s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail
+[1.573s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/goal_pose__traits.hpp
+[1.573s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/object_pose__traits.hpp
+[1.573s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/temp_pose__struct.hpp
+[1.573s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/goal_pose__builder.hpp
+[1.573s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/temp_pose__builder.hpp
+[1.574s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/robot_status__builder.hpp
+[1.574s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/robot_status__traits.hpp
+[1.574s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/object_pose__struct.hpp
+[1.574s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/robot_status__struct.hpp
+[1.574s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/goal_pose__struct.hpp
+[1.574s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/temp_pose__traits.hpp
+[1.575s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/object_pose__builder.hpp
+[1.575s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/goal_pose.hpp
+[1.575s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs
+[1.575s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/action
+[1.575s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail
+[1.576s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/dds_fastrtps
+[1.576s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/move_to_goal__rosidl_typesupport_fastrtps_cpp.hpp
+[1.576s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg
+[1.576s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.576s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail
+[1.576s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/goal_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[1.576s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/dds_fastrtps
+[1.577s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/robot_status__rosidl_typesupport_fastrtps_cpp.hpp
+[1.577s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/temp_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[1.577s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/object_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[1.577s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_fastrtps_cpp.so
+[1.577s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs
+[1.577s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/action
+[1.577s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail
+[1.577s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/move_to_goal__type_support.cpp
+[1.577s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/action/detail/move_to_goal__rosidl_typesupport_introspection_cpp.hpp
+[1.577s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg
+[1.577s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail
+[1.578s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/goal_pose__rosidl_typesupport_introspection_cpp.hpp
+[1.578s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/robot_status__rosidl_typesupport_introspection_cpp.hpp
+[1.578s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/object_pose__type_support.cpp
+[1.578s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/goal_pose__type_support.cpp
+[1.578s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/temp_pose__type_support.cpp
+[1.578s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/object_pose__rosidl_typesupport_introspection_cpp.hpp
+[1.578s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/robot_status__type_support.cpp
+[1.578s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/temp_pose__rosidl_typesupport_introspection_cpp.hpp
+[1.578s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_introspection_cpp.so
+[1.578s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_cpp.so
+[1.578s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/environment/pythonpath.sh
+[1.578s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/environment/pythonpath.dsv
+[1.578s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs-0.0.0-py3.10.egg-info
+[1.578s] -- Installing: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[1.578s] -- Installing: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[1.578s] -- Installing: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[1.579s] -- Installing: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[1.579s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs
+[1.579s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/librobot_msgs__rosidl_generator_py.so
+[1.579s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.579s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/_robot_msgs_s.ep.rosidl_typesupport_c.c
+[1.579s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/_robot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.579s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/action
+[1.579s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/action/__init__.py
+[1.579s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/action/_move_to_goal.py
+[1.579s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/action/_move_to_goal_s.c
+[1.579s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/_robot_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[1.579s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/__init__.py
+[1.579s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.579s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.579s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg
+[1.579s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/_object_pose_s.c
+[1.579s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/_goal_pose_s.c
+[1.579s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/_robot_status_s.c
+[1.580s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/_goal_pose.py
+[1.580s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/__init__.py
+[1.580s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/_robot_status.py
+[1.580s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/_temp_pose_s.c
+[1.580s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/_temp_pose.py
+[1.580s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/_object_pose.py
+[1.717s] Listing '/home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs'...
+[1.717s] Listing '/home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/action'...
+[1.717s] Listing '/home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg'...
+[1.723s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.723s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.724s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.724s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/lib/librobot_msgs__rosidl_generator_py.so
+[1.724s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/msg/ObjectPose.idl
+[1.724s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/msg/GoalPose.idl
+[1.724s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/msg/TempPose.idl
+[1.724s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/msg/RobotStatus.idl
+[1.724s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/action/MoveToGoal.idl
+[1.725s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/msg/ObjectPose.msg
+[1.725s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/msg/GoalPose.msg
+[1.725s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/msg/TempPose.msg
+[1.725s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/msg/RobotStatus.msg
+[1.725s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/action/MoveToGoal.action
+[1.725s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/ament_index/resource_index/package_run_dependencies/robot_msgs
+[1.725s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/ament_index/resource_index/parent_prefix_path/robot_msgs
+[1.725s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/environment/ament_prefix_path.sh
+[1.725s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/environment/ament_prefix_path.dsv
+[1.726s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/environment/path.sh
+[1.726s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/environment/path.dsv
+[1.726s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/local_setup.bash
+[1.726s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/local_setup.sh
+[1.726s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/local_setup.zsh
+[1.726s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/local_setup.dsv
+[1.726s] -- Installing: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/package.dsv
+[1.726s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/ament_index/resource_index/packages/robot_msgs
+[1.726s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_generator_cExport.cmake
+[1.727s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_generator_cExport-noconfig.cmake
+[1.727s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[1.727s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.727s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_introspection_cExport.cmake
+[1.727s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.727s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_cExport.cmake
+[1.727s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[1.727s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_generator_cppExport.cmake
+[1.727s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.728s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.728s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[1.728s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.728s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_cppExport.cmake
+[1.728s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[1.728s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_generator_pyExport.cmake
+[1.728s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_generator_pyExport-noconfig.cmake
+[1.728s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/cmake/rosidl_cmake-extras.cmake
+[1.728s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.728s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.728s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[1.728s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[1.728s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.728s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.729s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/cmake/robot_msgsConfig.cmake
+[1.729s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/cmake/robot_msgsConfig-version.cmake
+[1.729s] -- Up-to-date: /home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_msgs/share/robot_msgs/package.xml
+[1.731s] Invoked command in '/home/aa/dev_ws/AIE_Final-main/control/controller_package/build/robot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/aa/dev_ws/AIE_Final-main/control/controller_package/install/task_manager:/home/aa/dev_ws/AIE_Final-main/control/controller_package/install/robot_controller:/home/aa/dev_ws/AIE_Final-main/control/controller_package/install/final_project_package /usr/bin/cmake --install /home/aa/dev_ws/AIE_Final-main/control/controller_package/build/robot_msgs

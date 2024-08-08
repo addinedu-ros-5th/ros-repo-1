@@ -1,0 +1,3 @@
+[console_scripts]
+object_data_publisher = final_project_package.object_data_publisher:main
+

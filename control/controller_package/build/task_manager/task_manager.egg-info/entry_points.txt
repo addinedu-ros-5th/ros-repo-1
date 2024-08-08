@@ -1,0 +1,3 @@
+[console_scripts]
+moving_order_node = task_manager.moving_order_node:main
+
